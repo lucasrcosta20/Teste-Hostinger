@@ -7,7 +7,7 @@ COPY app.py .
 COPY templates/ templates/
 
 # Instalar dependências Python
-RUN pip install flask
+RUN pip install flask requests
 
 # Expor porta
 EXPOSE 8000

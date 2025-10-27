@@ -4,4 +4,5 @@ services:
     build: .
     ports:
       - "8080:8000"
+    network_mode: "host"
     restart: unless-stopped
