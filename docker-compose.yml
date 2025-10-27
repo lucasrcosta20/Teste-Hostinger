@@ -4,12 +4,4 @@ services:
     build: .
     ports:
       - "8080:8000"
-      - "11434:11434"
-    volumes:
-      - ollama_data:/root/.ollama
     restart: unless-stopped
-    environment:
-      - OLLAMA_HOST=0.0.0.0
-
-volumes:
-  ollama_data:
